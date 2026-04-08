@@ -52,6 +52,30 @@ h2 {
     object-fit: cover;
 }
 
+/* 1. まずはPCでの見た目を綺麗に作る */
+.sns-container {
+    display: flex;       /* 横並びにする */
+    gap: 15px;           /* アイコン同士の隙間 */
+    justify-content: left; /* 左揃えにする */
+}
+
+.sns-container a img {
+    height: 40px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    /* ここにヒント1・2のコードを書く */
+}
+
+/* 2. メディアクエリを追加して、スマホでのサイズを上書きする */
+@media (max-width: 480px) {
+    .sns-container a img {
+        /* ここにヒント3のコードを書く */
+        height: 30px;
+    }
+}
+
+
 /* フッター */
 footer {
     text-align: center;
