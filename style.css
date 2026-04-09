@@ -67,6 +67,14 @@ h2 {
     /* ここにヒント1・2のコードを書く */
 }
 
+/* フッター */
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+
 /* 2. メディアクエリを追加して、スマホでのサイズを上書きする */
 @media (max-width: 480px) {
     .sns-container a img {
@@ -75,11 +83,3 @@ h2 {
     }
 }
 
-
-/* フッター */
-footer {
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
-    color: #888;
-}
