@@ -1,4 +1,4 @@
-/* 基本設定：余白をリセットして扱いやすくする */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ body {
     background-color: #f9f9f9;
 }
 
-/* ヘッダー：中央揃えにする */
 header {
     background-color: #fff;
     padding: 3rem 1rem;
@@ -20,7 +19,6 @@ header {
     border-bottom: 1px solid #eee;
 }
 
-/* メインコンテンツの幅を制限して読みやすくする */
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -32,15 +30,15 @@ section {
 }
 
 h2 {
-    border-left: 5px solid #ff5a5f; /* 赤いアクセントライン */
+    border-left: 5px solid #ff5a5f; 
     padding-left: 10px;
     margin-bottom: 1.5rem;
 }
 
-/* プロフィール部分のレイアウト */
+
 .profile-content {
     display: flex;
-    flex-wrap: wrap; /* スマホで縦に並ぶように */
+    flex-wrap: wrap; 
     gap: 20px;
     align-items: center;
 }
@@ -52,11 +50,10 @@ h2 {
     object-fit: cover;
 }
 
-/* 1. まずはPCでの見た目を綺麗に作る */
 .sns-container {
-    display: flex;       /* 横並びにする */
-    gap: 15px;           /* アイコン同士の隙間 */
-    justify-content: left; /* 左揃えにする */
+    display: flex;      
+    gap: 15px;           
+    justify-content: left; 
 }
 
 .sns-container a img {
@@ -64,10 +61,9 @@ h2 {
     width: auto;
     max-width: 100%;
     object-fit: contain;
-    /* ここにヒント1・2のコードを書く */
 }
 
-/* フッター */
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -75,10 +71,9 @@ footer {
     color: #888;
 }
 
-/* 2. メディアクエリを追加して、スマホでのサイズを上書きする */
 @media (max-width: 480px) {
     .sns-container a img {
-        /* ここにヒント3のコードを書く */
+        
         height: 30px;
     }
 }
